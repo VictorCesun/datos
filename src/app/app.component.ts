@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ComponenteAComponent } from './componente-a/componente-a.component';
+import { ComponenteBComponent } from './componente-b/componente-b.component';
+import { ComponenteCComponent } from './componente-c/componente-c.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ComponenteAComponent, ComponenteBComponent, ComponenteCComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'datos';
-}
+export class AppComponent {}
